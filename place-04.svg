@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="nanjing road night clay">
+  <defs>
+    <filter id="soft" x="-15%" y="-15%" width="130%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="b"/>
+      <feOffset dy="4" result="o"/>
+      <feComponentTransfer in="o" result="shadow">
+        <feFuncA type="linear" slope="0.35"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <radialGradient id="glow" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.25"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" rx="0" fill="#0a0a1a"/>
+  <ellipse cx="400" cy="300" rx="420" ry="320" fill="url(#glow)"/>
+  <g filter="url(#soft)">
+    <rect x="80" y="160" width="100" height="320" rx="16" fill="#2d1b4e" opacity="1"/>
+    <rect x="200" y="100" width="90" height="380" rx="16" fill="#1a1a3e" opacity="1"/>
+    <rect x="310" y="140" width="110" height="340" rx="16" fill="#3d2a5c" opacity="1"/>
+    <rect x="440" y="80" width="100" height="400" rx="16" fill="#16213e" opacity="1"/>
+    <rect x="560" y="150" width="120" height="330" rx="16" fill="#2a1a4e" opacity="1"/>
+    <rect x="100" y="200" width="18" height="14" rx="4" fill="#e94560" opacity="0.9"/>
+    <rect x="100" y="240" width="18" height="14" rx="4" fill="#ffd36b" opacity="0.9"/>
+    <rect x="100" y="280" width="18" height="14" rx="4" fill="#2ec4b6" opacity="0.9"/>
+    <rect x="220" y="160" width="18" height="14" rx="4" fill="#ff6b9d" opacity="0.9"/>
+    <rect x="220" y="220" width="18" height="14" rx="4" fill="#7fdbda" opacity="0.9"/>
+    <rect x="220" y="300" width="18" height="14" rx="4" fill="#e94560" opacity="0.9"/>
+    <rect x="340" y="180" width="18" height="14" rx="4" fill="#ffd36b" opacity="0.9"/>
+    <rect x="340" y="260" width="18" height="14" rx="4" fill="#a78bfa" opacity="0.9"/>
+    <rect x="340" y="320" width="18" height="14" rx="4" fill="#2ec4b6" opacity="0.9"/>
+    <rect x="470" y="140" width="18" height="14" rx="4" fill="#e94560" opacity="0.9"/>
+    <rect x="470" y="200" width="18" height="14" rx="4" fill="#ffd36b" opacity="0.9"/>
+    <rect x="470" y="280" width="18" height="14" rx="4" fill="#ff6b9d" opacity="0.9"/>
+    <rect x="590" y="200" width="18" height="14" rx="4" fill="#7fdbda" opacity="0.9"/>
+    <rect x="590" y="260" width="18" height="14" rx="4" fill="#e94560" opacity="0.9"/>
+    <rect x="590" y="340" width="18" height="14" rx="4" fill="#ffd36b" opacity="0.9"/>
+    <rect x="40" y="460" width="720" height="80" rx="24" fill="#1a1a2e" opacity="1"/>
+    <ellipse cx="400" cy="490" rx="280" ry="20" fill="#ffd36b" opacity="0.15"/>
+    <rect x="180" y="360" width="80" height="28" rx="10" fill="#e94560" opacity="0.95"/>
+    <rect x="480" y="340" width="90" height="28" rx="10" fill="#2ec4b6" opacity="0.95"/>
+    <ellipse cx="350" cy="440" rx="23" ry="30" fill="#f8f1f1" opacity="0.95"/>
+    <ellipse cx="350" cy="408" rx="17" ry="17" fill="#a7c5eb" opacity="0.98"/>
+    <ellipse cx="200" cy="100" rx="80" ry="40" fill="#ffffff" opacity="0.06"/>
+  </g>
+  <ellipse cx="400" cy="540" rx="340" ry="48" fill="#000000" opacity="0.28"/>
+  <rect width="800" height="600" fill="url(#floor)" pointer-events="none"/>
+</svg>
