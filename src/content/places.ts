@@ -6,6 +6,14 @@ import type { Place } from "./types";
  */
 export const places: Place[] = [
   {
+    id: "2026-09-17-flagship-amsterdam",
+    date: "2026-09-17",
+    title: { zh: "Flagship Amsterdam", en: "Flagship Amsterdam" },
+    companions: [{ zh: "旅途", en: "trip" }],
+    image: "/places/flagship-amsterdam-day.png",
+    nightImage: "/places/flagship-amsterdam-night.png",
+  },
+  {
     id: "2026-09-12-suzhou-creek",
     date: "2026-09-12",
     title: { zh: "苏州河步道", en: "Suzhou Creek Walk" },
